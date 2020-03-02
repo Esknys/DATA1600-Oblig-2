@@ -5,12 +5,21 @@ public class main {
     public static void baklengsTabell(ArrayList<Integer> integers) {
             int i = integers.size() - 1;
             if (i < 0) {System.out.print("");} else {
-                System.out.print(integers.get(i));
+                System.out.println(integers.get(i));
                 integers.remove(i);
 
                 baklengsTabell(integers);
             }
     }
+
+    public static int findMin(int[] ints, int length) {
+        if (length == 1)
+            return ints[0];
+        
+        return Math.min(ints[length-1], findMin(ints, length-1));
+    }
+
+
 
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
@@ -21,6 +30,11 @@ public class main {
         integers.add(5);
 
         baklengsTabell(integers);
+
+        int[] ints = {2, 6, 38, 8, -30, 15, 1};
+        int lengde = ints.length;
+
+        System.out.println(findMin(ints, lengde));
 
     }
 
