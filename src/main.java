@@ -20,7 +20,6 @@ public class main {
     }
 
 
-
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
         integers.add(1);
