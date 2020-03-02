@@ -1,3 +1,5 @@
+import com.sun.tools.corba.se.idl.constExpr.Equal;
+
 import java.util.ArrayList;
 
 public class main {
@@ -19,6 +21,16 @@ public class main {
         return Math.min(ints[length-1], findMin(ints, length-1));
     }
 
+    public static int search(int[] ints, int l, int r, int x) {
+        if (r < l)
+            return -1;
+        if (ints[l] == x)
+            return l;
+        if (ints[r] == x)
+            return r;
+        return search(ints, l+1, r-1, x);
+    }
+
 
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
@@ -34,6 +46,12 @@ public class main {
         int lengde = ints.length;
 
         System.out.println(findMin(ints, lengde));
+
+        int x = 3;
+
+        int i = search(ints, 0, ints.length -1, x);
+
+        System.out.println(i);
 
     }
 
