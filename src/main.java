@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class main {
 
+    //Oppgave 1.3
+
     public static void baklengsTabell(ArrayList<Integer> integers) {
             int i = integers.size() - 1;
             if (i < 0) {System.out.print("");} else {
@@ -12,12 +14,16 @@ public class main {
             }
     }
 
+    //Oppgave 1.4
+
     public static int findMin(int[] ints, int length) {
         if (length == 1)
             return ints[0];
         
         return Math.min(ints[length-1], findMin(ints, length-1));
     }
+
+    //Oppgave 1.5
 
     public static int search(int[] ints, int l, int r, int x) {
         if (r < l)
@@ -28,6 +34,13 @@ public class main {
             return r;
         return search(ints, l+1, r-1, x);
     }
+
+    //Oppgave 2.1
+
+    public static void writeArray(ArrayList<? extends Object> list) {
+        for (Object o : list)
+            System.out.println(o);
+        }
 
 
     public static void main(String[] args) {
@@ -50,6 +63,8 @@ public class main {
         int i = search(ints, 0, ints.length -1, x);
 
         System.out.println(i);
+
+        writeArray(integers);
 
     }
 
