@@ -35,13 +35,6 @@ public class main {
         return search(ints, l+1, r-1, x);
     }
 
-    //Oppgave 2.1
-
-    public static void writeArray(ArrayList<? extends Object> list) {
-        for (Object o : list)
-            System.out.println(o);
-        }
-
 
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
@@ -64,7 +57,9 @@ public class main {
 
         System.out.println(i);
 
-        writeArray(integers);
+        Generisk generisk = new Generisk();
+
+        generisk.writeArray(integers);
 
     }
 
