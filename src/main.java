@@ -35,6 +35,14 @@ public class main {
         return search(ints, l+1, r-1, x);
     }
 
+    //Oppgave 2.1
+
+    public static <T> void printArray(T[] array){
+        for(T a : array){
+            System.out.println(a);
+        }
+    }
+
 
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
@@ -45,6 +53,8 @@ public class main {
         integers.add(5);
 
         baklengsTabell(integers);
+
+        Integer[] array = {1,2,3,4,5,6,6};
 
         int[] ints = {2, 6, 38, 8, -30, 15, 1};
         int lengde = ints.length;
@@ -57,9 +67,7 @@ public class main {
 
         System.out.println(i);
 
-        Generisk generisk = new Generisk();
-
-        generisk.writeArray(integers);
+        printArray(array);
 
     }
 
