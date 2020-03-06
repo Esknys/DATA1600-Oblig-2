@@ -9,7 +9,6 @@ public class main {
             if (i < 0) {System.out.print("");} else {
                 System.out.println(integers.get(i));
                 integers.remove(i);
-
                 baklengsTabell(integers);
             }
     }
@@ -43,6 +42,16 @@ public class main {
         }
     }
 
+    //Oppgave 2.2
+
+    public static <T> void reverseArray(T[] array){
+        for (int i = 0; i < array.length/2; i++) {
+            T temp = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length -1 -i] = temp;
+        }
+    }
+
 
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
@@ -53,8 +62,6 @@ public class main {
         integers.add(5);
 
         baklengsTabell(integers);
-
-        Integer[] array = {1,2,3,4,5,6,6};
 
         int[] ints = {2, 6, 38, 8, -30, 15, 1};
         int lengde = ints.length;
@@ -67,7 +74,14 @@ public class main {
 
         System.out.println(i);
 
+        Integer[] array = {1,2,3,4,5,6,7,8,9,10};
+
         printArray(array);
+
+        reverseArray(array);
+
+        printArray(array);
+
 
     }
 
