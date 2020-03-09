@@ -1,6 +1,8 @@
+import java.util.AbstractList;
 import java.util.ArrayList;
 
-public class main {
+public class main<E> {
+
 
     //Oppgave 1.3
 
@@ -81,6 +83,22 @@ public class main {
         reverseArray(array);
 
         printArray(array);
+
+        ArrayList<Integer> arrayList = new ArrayList<>(5);
+
+        AL al = new AL(arrayList);
+
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        al.add(6);
+
+
+        System.out.println(al.size());
+
+
 
 
     }
