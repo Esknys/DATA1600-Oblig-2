@@ -56,7 +56,9 @@ public class main {
 
 
     public static void main(String[] args) {
+
         ArrayList<Integer> integers = new ArrayList<>();
+
         integers.add(1);
         integers.add(2);
         integers.add(3);
@@ -66,6 +68,7 @@ public class main {
         baklengsTabell(integers);
 
         int[] ints = {2, 6, 38, 8, -30, 15, 1};
+
         int lengde = ints.length;
 
         System.out.println(findMin(ints, lengde));
@@ -84,29 +87,34 @@ public class main {
 
         printArray(array);
 
-        AL al = new AL();
+        int size = 5;
+        ArrayList arrayList = new ArrayList(size);
 
-        al.add(1);
-        al.add(2);
-        al.add(3);
-        al.add(4);
-        al.add(5);
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        int four = 4;
+        int five = 5;
+        int six = 6;
+        int seven = 7;
 
-        boolean bool = al.add(6);
+        arrayList.add(one);
+        arrayList.add(two);
+        arrayList.add(three);
+        arrayList.add(four);
+        arrayList.add(five);
+        arrayList.add(six);
+        arrayList.add(seven);
+
+        boolean bool = arrayList.add(seven);
 
         System.out.println(bool);
 
-        System.out.println(al.get(3));
+        System.out.println(arrayList.get(1));
 
-        System.out.println(al.size());
+        System.out.println(arrayList.size());
 
-        System.out.println(al.get(6));
-
-
-
-
-
-
+        System.out.println(arrayList.get(11));
 
 
     }
