@@ -1,7 +1,7 @@
 import java.util.AbstractList;
 import java.util.ArrayList;
 
-public class main<E> {
+public class main {
 
 
     //Oppgave 1.3
@@ -84,19 +84,27 @@ public class main<E> {
 
         printArray(array);
 
-        ArrayList<Integer> arrayList = new ArrayList<>(5);
-
-        AL al = new AL(arrayList);
+        AL al = new AL();
 
         al.add(1);
         al.add(2);
         al.add(3);
         al.add(4);
         al.add(5);
-        al.add(6);
 
+        boolean bool = al.add(6);
+
+        System.out.println(bool);
+
+        System.out.println(al.get(3));
 
         System.out.println(al.size());
+
+        System.out.println(al.get(6));
+
+
+
+
 
 
 

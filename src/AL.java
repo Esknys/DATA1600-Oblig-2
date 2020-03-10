@@ -1,28 +1,21 @@
 
 //Oppgave 2.3
 
-import java.util.AbstractList;
 import java.util.ArrayList;
 
 
 public class AL<E> {
 
-    private ArrayList<E> list;
-
-    public AL(ArrayList<E> liste) {
-        this.list = liste;
-    }
-
+    public ArrayList<E> list = new ArrayList<>(5);
 
 public boolean add(E elem) {
 
-   try {
-       list.add(elem);
-       return true;
-   } catch (Exception e) {
-       return false;
-   }
-
+       if (list.size() < 5) {
+           list.add(elem);
+           return true;
+       } else {
+           return false;
+       }
     }
 
     public E get (int index) throws IndexOutOfBoundsException {
