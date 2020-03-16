@@ -96,17 +96,15 @@ public class main {
         int four = 4;
         int five = 5;
         int six = 6;
-        int seven = 7;
+
 
         arrayList.add(one);
         arrayList.add(two);
         arrayList.add(three);
         arrayList.add(four);
         arrayList.add(five);
-        arrayList.add(six);
-        arrayList.add(seven);
 
-        boolean bool = arrayList.add(seven);
+        boolean bool = arrayList.add(six);
 
         System.out.println(bool);
 
@@ -114,7 +112,7 @@ public class main {
 
         System.out.println(arrayList.size());
 
-        System.out.println(arrayList.get(11));
+        System.out.println(arrayList.get(6));
 
 
     }
