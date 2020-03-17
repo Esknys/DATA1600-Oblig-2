@@ -1,4 +1,4 @@
-import java.util.AbstractList;
+
 import java.util.ArrayList;
 
 public class main {
@@ -108,8 +108,8 @@ public class main {
 
         printArray(array);
 
-        int size = 5;
-        ArrayList arrayList = new ArrayList(size);
+        int size1 = 5;
+        ArrayListe arrayListe = new ArrayListe(size1);
 
         int one = 1;
         int two = 2;
@@ -119,21 +119,21 @@ public class main {
         int six = 6;
 
 
-        arrayList.add(one);
-        arrayList.add(two);
-        arrayList.add(three);
-        arrayList.add(four);
-        arrayList.add(five);
+        arrayListe.add(one);
+        arrayListe.add(two);
+        arrayListe.add(three);
+        arrayListe.add(four);
+        arrayListe.add(five);
 
-        boolean bool = arrayList.add(six);
+        boolean bool = arrayListe.add(six);
 
         System.out.println(bool);
 
-        System.out.println(arrayList.get(1));
+        System.out.println(arrayListe.get(1));
 
-        System.out.println(arrayList.size());
+        System.out.println(arrayListe.size());
 
-        System.out.println(arrayList.get(6));
+        System.out.println(arrayListe.get(6));
 
 
     }

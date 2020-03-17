@@ -2,25 +2,26 @@
 //Oppgave 2.3
 
 
-public class ArrayList<E> {
+public class ArrayListe <E> {
 
     private static Object[] objects;
     private int størrelse;
     private int i = 0;
 
-    public ArrayList(int size) {
-                 objects = new Object[size];
-                 this.størrelse = size;
+    public ArrayListe(int size1) {
+                 this.objects = new Object[size1];
+                 this.størrelse = size1;
     }
 
 
 public <E> boolean add(E elem) {
         if (i >= størrelse) {
             return false;
-        }
+        } else {
             objects[i] = elem;
             i = i + 1;
             return true;
+        }
         }
 
 
@@ -30,7 +31,7 @@ public <E> boolean add(E elem) {
     if (index < 0 || index > size()) {
         throw new IndexOutOfBoundsException();
     } else {
-        return (E)objects[index];
+        return (E) objects[index];
     }
 
     }
