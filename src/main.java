@@ -3,6 +3,23 @@ import java.util.ArrayList;
 
 public class main {
 
+    //Oppgave 1.1
+
+    public static int sum(int x) {
+        if (x > 0) {
+            x = x + sum(x-1);
+        }
+        return x;
+    }
+
+    //Oppgave 1.2
+
+    public static int pow(int base, int exponent) {
+        if (exponent > 0) {
+            base = base * pow(base, exponent - 1);
+        }
+        return base;
+    }
 
     //Oppgave 1.3
 
@@ -56,6 +73,10 @@ public class main {
 
 
     public static void main(String[] args) {
+
+        System.out.println(sum(9));
+
+        System.out.println(pow(2, 2));
 
         ArrayList<Integer> integers = new ArrayList<>();
 
