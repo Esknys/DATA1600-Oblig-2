@@ -74,13 +74,12 @@ public class main {
     /* Oppgave 3.1
     *
     * Et problem som passer for designmønsteret State:
-    * Implementer et program for en elektrisk håndtørker som aktiveres med sensor.
-    * Når sensoren aktiveres skal håndtørkeren blåse luft ut. Når sensoren
-    * deaktiveres skal håndtørkeren slås av.
+    * Implementer et program for en elektrisk håndtørker som aktiveres med sensor. Når sensoren aktiveres skal
+    * håndtørkeren blåse luft ut. Når sensoren deaktiveres skal håndtørkeren slås av.
     *
     * Et problem som passer for designmønsteret Strategy:
-    * Implementer et program for betaling i en nettbutikk. Det skal være mulig å
-    * betale med enten kreditt/debitkort, Vipps, Paypal eller Klarna faktura.
+    * Implementer et program for betaling i en nettbutikk. Det skal være mulig å betale med enten kreditt/debitkort,
+    * Vipps, Paypal eller Klarna faktura.
     * */
 
 
