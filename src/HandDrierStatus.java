@@ -1,3 +1,6 @@
+
+//Oppgave 3.2
+
 public interface HandDrierStatus {
     HandDrierStatus sensorChange();
     String getStatus();

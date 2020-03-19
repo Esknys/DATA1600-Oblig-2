@@ -129,7 +129,6 @@ public class main {
         int five = 5;
         int six = 6;
 
-
         arrayListe.add(one);
         arrayListe.add(two);
         arrayListe.add(three);
