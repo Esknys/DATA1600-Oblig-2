@@ -144,8 +144,15 @@ public class main {
 
         System.out.println(arrayListe.size());
 
-        System.out.println(arrayListe.get(6));
 
+        HandDrier handDrier = new HandDrier();
+        handDrier.sensorChanging();
+        handDrier.printStatus();
+        handDrier.sensorChanging();
+        handDrier.printStatus();
+
+
+        System.out.println(arrayListe.get(6));
 
     }
 
