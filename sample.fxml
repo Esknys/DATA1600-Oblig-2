@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<AnchorPane fx:id="bakgrunnid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HTMLEditor id="htmleditorid" fx:id="htmlid" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="95.0" layoutY="192.0" prefHeight="200.0" prefWidth="506.0" />
+      <Button fx:id="openid" layoutX="127.0" layoutY="89.0" mnemonicParsing="false" onAction="#openaction" text="Open" />
+      <Button fx:id="saveid" layoutX="209.0" layoutY="89.0" mnemonicParsing="false" onAction="#saveaction" text="Save" />
+      <TextField id="textfieldid" fx:id="textfieldid" layoutX="332.0" layoutY="89.0" onAction="#textfieldaction" />
+   </children>
+</AnchorPane>
