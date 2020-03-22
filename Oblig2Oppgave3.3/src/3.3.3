@@ -1,0 +1,7 @@
+Siden alle former utvider den abstrakte klassen Shape, kan vi håndtere alle slags former som en Shape.
+
+Shape circle1 = new Circle(4);
+Shape rectangle1 = new Rectangle(5, 4);
+
+I initialiseringen av formene sirkel og rektangel skriver at begge formene er av klassen Shape, men i konstruktøren
+velger vi vilken form den faktisk er. Da kan vi feks. samle både circle1 og rectangle1 i en felles List<Shape>.

@@ -1,0 +1,51 @@
+Designmønsteret decorator vil egne seg til å tegne en ramme rundt formene. Siden vi ikke vet om en form skal ha en ramme
+før den blir opprettet, vil decorator fungere bra, og vi slipper å endre på selve form-klassen.
+
+Eksempel:
+
+Jeg vil lage en ramme rundt en Circle
+
+public class Circle extends Shape {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public void draw() {
+        //her tegnes sirkel
+    }
+
+}
+
+Jeg opretter en ny klasse: CircleFrame som extender Circle
+
+public class CircleFrame extends Circle {
+
+    private Circle wrapper;
+    private double frameRadius;
+
+    public CircleFrame(Circle circle, double frameRadius) {
+        super(0);
+        wrapper = circle;
+        this.frameRadius = frameRadius;
+    }
+
+    @Override
+    public double getRadius() {
+        return frameRadius;
+    }
+
+}
+
+Dette gjør at man kan opprette et sirkel-objekt, og så legge til en ramme ved å sende inn sirkelen i konstruktøren til
+CircleFrame. Dette vil ikke endre på det originale sirkel-objektet.
